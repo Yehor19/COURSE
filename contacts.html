@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .map-image {
+            flex: 1 1 300px;
+        }
+        .contact-info {
+            flex: 2 1 500px;
+            position: relative;
+            padding-right: 20px;
+        }
+        .vertical-line {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #000;
+        }
+        .additional-info {
+            flex: 1 1 300px;
+            padding-left: 20px;
+        }
+        .contact-info p, .additional-info p {
+            margin: 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://nung.edu.ua/sites/default/files/styles/medium/public/2020-10/kaf_susp_nauk.jpg?itok=AsG0NC60" alt="Логотип" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">Про нас <span class="sr-only">(поточна)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Новини</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <h1>Контакти</h1>
+            <div class="contact-section">
+                <div class="map-image">
+                    <h2>УжНУ на мапі:</h2>
+                    <div id="map-container"></div> 
+                </div>
+                
+                <div class="contact-info">
+                    <p>Ужгородський національний університет є одним із класичних університетів України, акредитованих за IV (вищим) рівнем акредитації (сертифікат серії РД - IV №0753932).</p>
+                    <p>Ректор – доктор медичних наук, професор Володимир Іванович Смоланка.</p>
+                    <h3>КОНТАКТНА ІНФОРМАЦІЯ:</h3>
+                    <p><strong>Ректорат:</strong></p>
+                    <p>Адреса: 88000, Україна, Закарпатська обл., м. Ужгород, пл. Народна, 3</p>
+                    <p>Телефон: +380312613321</p>
+                    <p>Факс: +380312613396</p>
+                    <p>E-mail: official@uzhnu.edu.ua</p>
+                    <p><strong>Приймальна комісія:</strong></p>
+                    <p>Адреса: 88000, Україна, Закарпатська обл., м. Ужгород, вул. Університетська, 14, кімн. 228</p>
+                    <p>Телефон: +380961238967, +380668293538</p>
+                    <p>E-mail: admission@uzhnu.edu.ua</p>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="additional-info">
+                    <h3>Дизайн та розробка:</h3>
+                    <p>Opalko Yehor</p>
+                    <p>Веб-майстер: egor.opalko@ukr.net</p>
+                    <p>Медіацентр: media@uzhnu.edu.ua</p>
+                    <p>© 2013-2024 УжНУ</p>
+                </div>
+            </div>
+            <a href="registration.html" class="btn btn-primary mt-4">Зареєструватися</a>
+        </div>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-muted">© 2024 Всі права захищено</p>
+                <p class="text-muted">
+                    <a href="https://www.instagram.com/poltava_polytechnic/" class="text-white" target="_blank">Instagram НУПП</a> |
+                    <a href="https://nupp.edu.ua/" class="text-white" target="_blank">Офіційний сайт НУПП</a> |
+                    <a href="https://github.com/Yehor19" class="text-white" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://img.freepik.com/premium-photo/dark-gray-background-with-abstract-geometric-shapes_88088-299.jpg?size=626&ext=jpg&ga=GA1.1.481800138.1717324586&semt=ais_user');
+    background-size: cover; /* Щоб зображення виходило на весь екран */
+    
+
+    color: #fff; /* Білий колір тексту */
+
+/* Стили для ПК */
+@media only screen and (min-width: 1024px) {
+    /* Ваши стили для больших экранов (например, ПК) */
+}
+
+/* Стили для планшетов */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Ваши стили для планшетов */
+}
+
+/* Стили для телефонов */
+@media only screen and (max-width: 767px) {
+    /* Ваши стили для маленьких экранов (например, телефонов) */
+}
+
+
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+}

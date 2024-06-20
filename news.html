@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .news-item {
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .news-item:hover img {
+            transform: scale(1.1);
+        }
+        .news-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+        }
+        .news-text h2, .news-text p, .news-text a {
+            color: white;
+        }
+        .news-text h2 {
+            font-size: 18px;
+            margin: 0 0 5px 0;
+        }
+        .news-text p {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+        }
+        .news-text a {
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://nung.edu.ua/sites/default/files/styles/medium/public/2020-10/kaf_susp_nauk.jpg?itok=AsG0NC60" alt="Логотип" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Галерея</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="news.html">Новини</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="mt-5 mb-4">Новини</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20230925_1907_pilipchuk_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Вибори голови Студентської ради факультету суспільних наук.</h2>
+                            <p>Дата: 27.05.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20231005_1086_fil03_thumb_wide.png" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>День самоврядування на факультеті суспільних наук</h2>
+                            <p>Дата: 23.05.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240522_1191_1_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Цікаві доповіді та жваві дискусії: на ФСН відбулася підсумкова студентська наукова конференція</h2>
+                            <p>Дата: 22.05.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240520_1242_yasam_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Захист педагогічної практики в поєднанні з екскурсією в центрі розвитку дітей «Я СЯМ»</h2>
+                            <p>Дата: 20.05.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240519_1733_7_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Факультет суспільних наук УжНУ: вибір, що веде до успіху – зустріч із учнями м. Виноградова</h2>
+                            <p>Дата: 19.05.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240517_1764_polshcha_page-0001_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>На Міжнародній науковій конференції в Польщі презентовано підготовку в УжНУ майбутніх фахівців дошкільної та початкової освіти</h2>
+                            <p>Дата: 17.05.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240515_1708_nmk07_thumb_wide.png" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Відбулося чергове засідання науково-методичної комісії факультету суспільних наук</h2>
+                            <p>Дата: 07.01.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240515_1460_photo_2024-05-14_00-30-40_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Делегація студентів УжНУ взяла участь у міжнародній науково-практичній конференції у Львові</h2>
+                            <p>Дата: 05.01.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240508_1356_foto_15_24_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Шлях від випускника кафедри психології ФСН до офіцера ЗСУ</h2>
+                            <p>Дата: 06.01.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240507_1174_zaprow_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Запрошуємо на навчання за спеціальністю «Початкова освіта»</h2>
+                            <p>Дата: 06.01.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240506_1418_excursia_thumb_wide.png" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Екскурсія як засіб розвитку професійних компетентностей майбутніх вчителів початкових класів</h2>
+                            <p>Дата: 06.01.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <img src="https://www.uzhnu.edu.ua/uploads/news/20240423_1516_foto_14_24_thumb_wide.jpg" class="img-fluid" alt="Зображення новини">
+                        <div class="news-text">
+                            <h2>Вітаємо із професійним святом - Всеукраїнським Днем психолога!</h2>
+                            <p>Дата: 07.01.2024</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-muted">© 2024 Всі права захищено</p>
+                <p class="text-muted">
+                    <a href="https://www.instagram.com/poltava_polytechnic/" class="text-white" target="_blank">Instagram НУПП</a> |
+                    <a href="https://nupp.edu.ua/" class="text-white" target="_blank">Офіційний сайт</a> |
+                    <a href="https://github.com/Yehor19" class="text-white" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

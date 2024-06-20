@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 10px); 
+            box-sizing: border-box;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 10px); 
+            }
+        }
+        @media (max-width: 576px) {
+            .gallery-item {
+                flex: 1 1 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://nung.edu.ua/sites/default/files/styles/medium/public/2020-10/kaf_susp_nauk.jpg?itok=AsG0NC60" alt="Логотип" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">Про нас <span class="sr-only">(поточна)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gallery.html">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Новини</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="mt-5 mb-4">Галерея</h1>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://static9.depositphotos.com/1658611/1138/i/380/depositphotos_11382349-stock-photo-university-campus.jpg" alt="Фото 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://static8.depositphotos.com/1001857/807/i/380/depositphotos_8073645-stock-photo-university-of-tennessee.jpg" alt="Фото 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st5.depositphotos.com/1516574/66955/i/380/depositphotos_669555918-stock-photo-close-graduation-cap-stack-books.jpg" alt="Фото 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st4.depositphotos.com/12982378/37852/i/380/depositphotos_378521076-stock-photo-cheerful-man-holding-digital-tablet.jpg" alt="Фото 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st3.depositphotos.com/12982378/18961/i/380/depositphotos_189613604-stock-photo-studying.jpg" alt="Фото 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st4.depositphotos.com/1177973/23167/i/380/depositphotos_231677256-stock-photo-pretty-student-book-studying-library.jpg" alt="Фото 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st2.depositphotos.com/3591429/10893/i/380/depositphotos_108932660-stock-photo-classmates-in-classroom-having-lecture.jpg" alt="Фото 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st.depositphotos.com/1518767/2310/i/380/depositphotos_23104460-stock-photo-student-leaning-against-bookshelf-holding.jpg" alt="Фото 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st.depositphotos.com/1037987/4846/i/380/depositphotos_48462345-stock-photo-male-university-student-using-digital.jpg" alt="Фото 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st3.depositphotos.com/12982378/18960/i/380/depositphotos_189608678-stock-photo-multiethnic-students-using-laptops-while.jpg" alt="Фото 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st3.depositphotos.com/11433342/14757/i/380/depositphotos_147573137-stock-photo-graduation-mortarboard-and-diploma.jpg" alt="Фото 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st.depositphotos.com/1194063/1248/i/380/depositphotos_12485987-stock-photo-student-at-campus-library.jpg" alt="Фото 12">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-muted">© 2024 Всі права захищено</p>
+                <p class="text-muted">
+                    <a href="https://www.instagram.com/poltava_polytechnic/" class="text-white" target="_blank">Instagram НУПП</a> |
+                    <a href="https://nupp.edu.ua/" class="text-white" target="_blank">Офіційний сайт НУПП</a> |
+                    <a href="https://github.com/Yehor19" class="text-white" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

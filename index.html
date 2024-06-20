@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .carousel-caption-custom {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        #news-container {
+            margin-top: 30px;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://nung.edu.ua/sites/default/files/styles/medium/public/2020-10/kaf_susp_nauk.jpg?itok=AsG0NC60" alt="Логотип" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Головна <span class="sr-only">(поточна)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Новини</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <h2 class="text-center">ФАКУЛЬТЕТ СУСПІЛЬНИХ НАУК</h2>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.lb.ua/078/40/63fdc429f3aa5.jpeg" class="d-block w-100" alt="Освіта для відбудови України та євроінтеграції: Факультет суспільних наук">
+                        <div class="carousel-caption-custom">
+                            Освіта для відбудови України та євроінтеграції: Факультет суспільних наук
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://st2.depositphotos.com/1518767/10656/i/380/depositphotos_106561172-stock-photo-people-looking-at-book-together.jpg" class="d-block w-100" alt="ЗАПРОШУЄМО НА НАВЧАННЯ ЗА СПЕЦІАЛЬНІСТЮ «ПСИХОЛОГІЯ»">
+                        <div class="carousel-caption-custom">
+                            ЗАПРОШУЄМО НА НАВЧАННЯ ЗА СПЕЦІАЛЬНІСТЮ «ПСИХОЛОГІЯ»
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://st2.depositphotos.com/1662991/7258/i/380/depositphotos_72580223-stock-photo-young-man-studying-with-friends.jpg" class="d-block w-100" alt="ЗАПРОШУЄМО НА НАВЧАННЯ ЗА СПЕЦІАЛЬНІСТЯМИ «ПОЧАТКОВА ОСВІТА» та «ДОШКІЛЬНА ОСВІТА»">
+                        <div class="carousel-caption-custom">
+                            ЗАПРОШУЄМО НА НАВЧАННЯ ЗА СПЕЦІАЛЬНІСТЯМИ «ПОЧАТКОВА ОСВІТА» та «ДОШКІЛЬНА ОСВІТА»
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Попередній</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Наступний</span>
+                </a>
+            </div>
+            <p>
+                Єдність освіти і науки є одним із основних принципів реформування вищої освіти на сучасному етапі. Його реалізація передбачає зосередження сил та ресурсів на підготовці науковців-дослідників, збільшення кількості та якості наукових досліджень у закладах освіти, підтримку і стимулювання талановитого молодого покоління. Тому, у процесі професійної підготовки науково-дослідна діяльність посідає не менш важливе місце, аніж навчальна.
+            </p>
+            <h1>Останні новини</h1>
+            <div id="news-container" class="news-container">
+                
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-muted">© 2024 Всі права захищено</p>
+                <p class="text-muted">
+                    <a href="https://www.instagram.com/poltava_polytechnic/" class="text-white" target="_blank">Instagram НУПП</a> |
+                    <a href="https://nupp.edu.ua/" class="text-white" target="_blank">Офіційний сайт НУПП</a> |
+                    <a href="https://github.com/Yehor19" class="text-white" target="_blank">GitHub</a>
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

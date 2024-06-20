@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Style the registration form */
+        .registration-section {
+            display: flex;
+            justify-content: center; /* Центруємо елементи по горизонталі */
+            align-items: center; /* Центруємо елементи по вертикалі */
+            height: 100vh; /* Встановлюємо висоту в 100% від висоти екрану */
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%; /* Ширина форми */
+            max-width: 600px; /* Максимальна ширина форми */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .registration-form .image-container {
+            margin-bottom: 20px;
+        }
+
+        .registration-form .form-container {
+            width: 100%; /* Ширина контейнера форми */
+        }
+
+        .registration-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="number"],
+        .registration-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .registration-form button[type="submit"] {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+    </header>
+    <section class="registration-section">
+        <h1>Реєстрація</h1>
+        <form action="registration_handler.php" method="post" class="registration-form">
+            <div class="image-container">
+                <img src="https://st2.depositphotos.com/3591429/7484/i/380/depositphotos_74844101-stock-photo-students-celebration-graduation-education-concept.jpg" alt="Профільне фото (необов'язково)">
+            </div>
+            <div class="form-container">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Прізвище:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="date_of_birth">Дата народження:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required>
+
+                <label for="course">Курс:</label>
+                <select id="course" name="course" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <button type="submit">Зареєструватися</button>
+            </div>
+        </form>
+        <footer class="bg-dark text-white">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="text-muted">© 2024 Всі права захищено</p>
+                    <p class="text-muted">
+                        <a href="https://www.instagram.com/poltava_polytechnic/" class="text-white" target="_blank">Instagram НУПП</a> |
+                        <a href="https://nupp.edu.ua/" class="text-white" target="_blank">Офіційний сайт НУПП</a> |
+                        <a href="https://github.com/Yehor19" class="text-white" target="_blank">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
